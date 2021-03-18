@@ -1,9 +1,10 @@
 #all-images-div {
+	grid-area: pic;
 	background: green;
 	width: 500px;
 	height: 400px;
-	margin: 100px auto;
-	padding: 10px;
+	margin: auto;
+	padding: 5px;
 }
 
 .off-image {
@@ -18,10 +19,57 @@
 	opacity: 1;
 }
 
+.arrows {
+	height: fit-content;
+	width: 40px;
+	margin: auto;
+	font-size: x-large;
+}
+#arrow-left {
+	grid-area: arrow-left;
+}
+
+#arrowm-right {
+	grid-area: arrow-right;
+}
+
+.arrows:hover {
+	font-size: xx-large;
+}
+
 #container {
 	width: 700px;
 	height: 600px;
 	background: grey;
 	margin: 20px auto;
 	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 6fr 1fr;
+	grid-template-rows: 8fr 1fr;
+	grid-template-areas:
+		'arrow-left pic arrow-right'
+		'dot dot dot';
+}
+
+#dots {
+	grid-area: dot;
+	width: 300px;
+	height: 40px;
+	padding: 5px;
+	margin: auto;
+}
+
+.all-dots {
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 50%;
+	border: 4px solid rgb(71, 71, 71);
+}
+
+.all-dots:hover {
+	background: rgb(71, 71, 71);
 }

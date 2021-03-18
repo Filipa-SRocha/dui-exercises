@@ -37,6 +37,18 @@ function displayImage(img) {
 	img.classList.toggle('displaying');
 }
 
+function makeDots() {
+	const dotsDiv = document.querySelector('#dots');
+
+	for (let i = 0; i < 5; i++) {
+		const dot = document.createElement('div');
+		dot.classList.add('all-dots');
+		dot.setAttribute('data-index', i);
+		dotsDiv.appendChild(dot);
+	}
+}
+
 loadImages();
 appendImages();
 displayImage(imageArray[1]);
+makeDots();
