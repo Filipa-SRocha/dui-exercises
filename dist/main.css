@@ -1,0 +1,27 @@
+#all-images-div {
+	background: green;
+	width: 500px;
+	height: 400px;
+	margin: 100px auto;
+	padding: 10px;
+}
+
+.off-image {
+	width: 400px;
+	height: 400px;
+	margin: 2px 50px;
+	position: absolute;
+	opacity: 0;
+}
+
+.displaying {
+	opacity: 1;
+}
+
+#container {
+	width: 700px;
+	height: 600px;
+	background: grey;
+	margin: 20px auto;
+	padding: 10px;
+}
