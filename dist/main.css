@@ -1,7 +1,7 @@
 #all-images-div {
 	grid-area: pic;
-	background: green;
-	width: 500px;
+	background: rgb(71, 71, 71);
+	width: 400px;
 	height: 400px;
 	margin: auto;
 	padding: 5px;
@@ -10,7 +10,7 @@
 .off-image {
 	width: 400px;
 	height: 400px;
-	margin: 2px 50px;
+	margin: auto;
 	position: absolute;
 	opacity: 0;
 }
@@ -41,7 +41,8 @@
 #container {
 	width: 700px;
 	height: 600px;
-	background: grey;
+	background: rgb(211, 210, 210);
+	box-shadow: 2px 1px 3px 2px grey;
 	margin: 20px auto;
 	padding: 10px;
 	display: grid;
