@@ -1,5 +1,10 @@
-import { displayImage, nextImage } from './modules/handleImg';
+import {
+	displayImage,
+	getDisplayedImage,
+	nextImage,
+} from './modules/handleImg';
 import { load } from './modules/loadPage';
+import { paintDots } from './modules/navigation';
 
 load();
 
@@ -10,12 +15,14 @@ const Dom = (function () {
 	arrows.forEach((arrow) =>
 		arrow.addEventListener('click', function (e) {
 			nextImage(this.id);
+			paintDots(getDisplayedImage());
 		})
 	);
 
 	dots.forEach((dot) =>
 		dot.addEventListener('click', function (e) {
-			displayImage(this.dataset.index);
+			displayImage(this.dataset.dotIndex);
+			paintDots(this.dataset.dotIndex);
 		})
 	);
 })();

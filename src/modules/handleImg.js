@@ -53,4 +53,4 @@ function nextImage(direction) {
 	displayImage(newIndex);
 }
 
-export { loadImages, appendImages, displayImage, nextImage };
+export { loadImages, appendImages, displayImage, nextImage, getDisplayedImage };

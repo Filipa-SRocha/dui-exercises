@@ -29,7 +29,7 @@
 	grid-area: arrow-left;
 }
 
-#arrowm-right {
+#arrow-right {
 	grid-area: arrow-right;
 }
 
@@ -72,5 +72,9 @@
 }
 
 .all-dots:hover {
+	background: rgb(71, 71, 71);
+}
+
+.painted {
 	background: rgb(71, 71, 71);
 }
