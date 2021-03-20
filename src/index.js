@@ -16,6 +16,8 @@ const Dom = (function () {
 		arrow.addEventListener('click', function (e) {
 			nextImage(this.id);
 			paintDots(getDisplayedImage());
+			clearInterval(timer);
+			auto();
 		})
 	);
 
@@ -23,6 +25,17 @@ const Dom = (function () {
 		dot.addEventListener('click', function (e) {
 			displayImage(this.dataset.dotIndex);
 			paintDots(this.dataset.dotIndex);
+			clearInterval(timer);
+			auto();
 		})
 	);
+
+	let timer;
+	function auto() {
+		timer = setInterval(() => {
+			nextImage(getDisplayedImage);
+			paintDots(getDisplayedImage());
+		}, 2000);
+	}
+	auto();
 })();
