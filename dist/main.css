@@ -8,14 +8,17 @@
 }
 
 .off-image {
-	width: 400px;
-	height: 400px;
-	margin: auto;
+	width: 10px;
+	height: 10px;
 	position: absolute;
 	opacity: 0;
 }
 
 .displaying {
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	margin: auto;
 	opacity: 1;
 }
 
