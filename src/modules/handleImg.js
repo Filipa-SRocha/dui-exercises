@@ -11,11 +11,11 @@ function makeImage(imgUrl) {
 
 function loadImages() {
 	const urls = [
-		'../src/img/img1.jpg',
-		'../src/img/img2.jpeg',
-		'../src/img/artur-malagueta.png',
-		'../src/img/printar.jpg',
-		'../src/img/img5.png',
+		'/Filipa-SRocha/dui-exercises/blob/main/src/img/img1.jpg',
+		'./src/img/img2.jpeg',
+		'./src/img/artur-malagueta.png',
+		'./src/img/printar.jpg',
+		'./src/img/img5.png',
 	];
 
 	urls.forEach((url) => imageArray.push(makeImage(url)));
